@@ -1,0 +1,13 @@
+:root {
+  --warna-latar: #fdfcf8;
+  --warna-latar-sekunder: #faf9f6;
+  --warna-teks: #4a4a4a;
+  --warna-judul: #3e2b26;
+  --warna-garis: #e5e5e5;
+
+  --warna-merah-brand: #a91f23;
+  --warna-aksen: #a57865;
+
+  --radius-kartu: 18px;
+  --bayangan-lembut: 0 12px 28px rgba(0, 0, 0, .07);
+}

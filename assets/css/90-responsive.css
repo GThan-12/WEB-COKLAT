@@ -1,0 +1,13 @@
+@media (max-width:768px) {
+  #konten-ulasan .border {
+    padding: 16px !important;
+  }
+
+  .gambar-produk-utama {
+    height: 320px;
+  }
+
+  .judul-detail-produk {
+    min-width: 140px;
+  }
+}

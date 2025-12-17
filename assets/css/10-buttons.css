@@ -1,0 +1,20 @@
+.tombol-utama {
+  border: 1px solid var(--warna-judul);
+  color: var(--warna-judul);
+  padding: 10px 18px;
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  font-size: .78rem;
+  transition: .25s;
+  text-decoration: none;
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tombol-utama:hover {
+  background: var(--warna-judul);
+  color: #fff;
+}

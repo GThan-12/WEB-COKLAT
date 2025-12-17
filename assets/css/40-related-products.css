@@ -1,0 +1,99 @@
+.judul-related-produk {
+  letter-spacing: .06em;
+  color: var(--warna-merah-brand);
+  font-weight: 900;
+  margin-top: 24px;
+}
+
+.kartu-produk {
+  text-align: center;
+}
+
+.bingkai-gambar-produk {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #eee;
+  border-radius: var(--radius-kartu);
+  background: #fff;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, .06);
+}
+
+.bingkai-gambar-produk img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: .45s;
+}
+
+.kartu-produk:hover .bingkai-gambar-produk img {
+  transform: scale(1.06);
+}
+
+.lapisan-quick-view {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  background: rgba(0, 0, 0, .35);
+  transition: .25s;
+}
+
+.kartu-produk:hover .lapisan-quick-view {
+  opacity: 1;
+}
+
+.tombol-quick-view {
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, .1);
+  color: #fff;
+  padding: 10px 16px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  font-size: .78rem;
+  font-weight: 900;
+}
+
+.tombol-quick-view:hover {
+  background: #fff;
+  color: #111;
+}
+
+.nama-produk-kartu {
+  margin-top: 12px;
+  font-weight: 900;
+  color: var(--warna-judul);
+}
+
+.harga-produk-kartu {
+  color: #888;
+}
+
+/* Modal quick view */
+.modal-produk {
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.modal-header-no-border {
+  border: 0;
+}
+
+.gambar-modal-quick-view {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  height: 320px;
+  object-fit: cover;
+}
+
+.tombol-fullwidth {
+  width: 100%;
+  justify-content: center;
+}
+
+.isi-modal-quick-view {
+  color: #333;
+  line-height: 1.7;
+}

@@ -1,0 +1,73 @@
+/* TESTIMONIALS */
+.kartu-testimoni {
+    height: 100%;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .06);
+    border-radius: var(--radius-kartu);
+    padding: 28px 26px;
+    box-shadow: 0 12px 26px rgba(0, 0, 0, .05);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.kartu-testimoni:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 34px rgba(0, 0, 0, .07);
+}
+
+.kartu-testimoni .bintang {
+    letter-spacing: .18em;
+    font-size: .9rem;
+    color: var(--warna-aksen);
+    margin-bottom: 14px;
+    line-height: 1;
+}
+
+.kartu-testimoni .kutip {
+    margin: 0 0 20px;
+    color: #555;
+    font-size: 1.03rem;
+    line-height: 1.75;
+    font-style: italic;
+}
+
+.kartu-testimoni .profil {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(0, 0, 0, .06);
+}
+
+.kartu-testimoni .avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    background: rgba(165, 120, 101, .16);
+    border: 1px solid rgba(165, 120, 101, .25);
+    color: var(--warna-judul);
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    letter-spacing: .02em;
+    flex: 0 0 44px;
+}
+
+.kartu-testimoni .nama {
+    font-weight: 700;
+    color: var(--warna-judul);
+    line-height: 1.2;
+}
+
+.kartu-testimoni .role {
+    font-size: .9rem;
+    color: #777;
+    margin-top: 2px;
+    line-height: 1.2;
+}
+
+@media (max-width: 992px) {
+    .kartu-testimoni {
+        padding: 24px 22px;
+    }
+}

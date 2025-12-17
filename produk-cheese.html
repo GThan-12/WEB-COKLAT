@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="id" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cheese Chocolate - Es Coklat Kabar Baik</title>
+    <meta
+      name="description"
+      content="Detail produk Cheese Chocolate - Es Coklat Kabar Baik. Lihat deskripsi, informasi tambahan, dan ulasan."
+    />
+
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;0,600;0,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- no-js -> js -->
+    <script src="assets/js/00-no-js.js"></script>
+
+    <!-- CSS per-bagian -->
+    <link rel="stylesheet" href="assets/css/00-variables.css" />
+    <link rel="stylesheet" href="assets/css/01-base.css" />
+    <link rel="stylesheet" href="assets/css/10-buttons.css" />
+    <link rel="stylesheet" href="assets/css/20-product-detail.css" />
+    <link rel="stylesheet" href="assets/css/30-tabs.css" />
+    <link rel="stylesheet" href="assets/css/40-related-products.css" />
+    <link rel="stylesheet" href="assets/css/50-reviews.css" />
+    <link rel="stylesheet" href="assets/css/90-responsive.css" />
+  </head>
+
+  <body>
+    <main class="bagian-halaman-produk">
+      <div class="container">
+        <a href="index.html#menu" class="tombol-utama mb-4">
+          <i class="bi bi-arrow-left"></i> Kembali
+        </a>
+
+        <div class="kartu-detail-produk">
+          <div class="row g-4 align-items-start">
+            <!-- KOLOM KIRI: GAMBAR -->
+            <div class="col-lg-5">
+              <img
+                id="gambarProdukUtama"
+                class="gambar-produk-utama"
+                src="images/Gemini_Generated_Image_g9td01g9td01g9td.png"
+                alt="Cheese Chocolate"
+              />
+
+              <div class="baris-thumbnail-produk" id="wadahThumbnailProduk">
+                <img
+                  class="thumbnail-produk"
+                  src="images/Gemini_Generated_Image_g9td01g9td01g9td.png"
+                  alt="Thumbnail 1"
+                  data-url-gambar="images/Gemini_Generated_Image_g9td01g9td01g9td.png"
+                />
+                <img
+                  class="thumbnail-produk"
+                  src="images/Gemini_Generated_Image_9m8thz9m8thz9m8t.png"
+                  alt="Thumbnail 2"
+                  data-url-gambar="images/Gemini_Generated_Image_9m8thz9m8thz9m8t.png"
+                />
+                <img
+                  class="thumbnail-produk"
+                  src="images/Gemini_Generated_Image_u2yx1ou2yx1ou2yx.png"
+                  alt="Thumbnail 3"
+                  data-url-gambar="images/Gemini_Generated_Image_u2yx1ou2yx1ou2yx.png"
+                />
+              </div>
+            </div>
+
+            <!-- KOLOM KANAN: DETAIL -->
+            <div class="col-lg-7">
+              <div class="label-kategori-produk">Signature Menu</div>
+              <h1 class="judul-produk-halaman">Cheese Chocolate</h1>
+
+              <div class="daftar-detail-produk">
+                <div class="baris-detail-produk">
+                  <div class="judul-detail-produk">Harga</div>
+                  <div class="nilai-detail-produk">IDR 15,000</div>
+                </div>
+                <div class="baris-detail-produk">
+                  <div class="judul-detail-produk">Cocok untuk</div>
+                  <div class="nilai-detail-produk">
+                    Sweet-salty lovers, creamy finish
+                  </div>
+                </div>
+                <div class="baris-detail-produk">
+                  <div class="judul-detail-produk">Karakter rasa</div>
+                  <div class="nilai-detail-produk">
+                    Chocolate creamy + cheesy note
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-4 d-flex gap-2 flex-wrap">
+                <a class="tombol-utama" href="index.html#kontak">
+                  <i class="bi bi-chat-dots"></i> Tanya Produk
+                </a>
+                <a
+                  class="tombol-utama"
+                  href="https://wa.me/62895361066847"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="bi bi-whatsapp"></i> Order via WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB -->
+          <div class="mt-5">
+            <ul class="nav nav-tabs" id="tabProduk" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="tab-deskripsi"
+                  data-bs-toggle="tab"
+                  data-bs-target="#konten-deskripsi"
+                  type="button"
+                  role="tab"
+                >
+                  Description
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="tab-informasi-tambahan"
+                  data-bs-toggle="tab"
+                  data-bs-target="#konten-informasi-tambahan"
+                  type="button"
+                  role="tab"
+                >
+                  Additional Information
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="tab-ulasan"
+                  data-bs-toggle="tab"
+                  data-bs-target="#konten-ulasan"
+                  type="button"
+                  role="tab"
+                >
+                  Reviews (0)
+                </button>
+              </li>
+            </ul>
+
+            <div class="tab-content kotak-tab" id="kontenTabProduk">
+              <div
+                class="tab-pane fade show active"
+                id="konten-deskripsi"
+                role="tabpanel"
+              >
+                <p>
+                  Cheese Chocolate adalah perpaduan cokelat creamy dengan rasa
+                  keju yang lembut. Hasilnya sweet–salty, cocok buat kamu yang
+                  suka aftertaste gurih tapi tetap manis.
+                </p>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="konten-informasi-tambahan"
+                role="tabpanel"
+              >
+                <div class="daftar-detail-produk" style="margin-top: 0">
+                  <div class="baris-detail-produk">
+                    <div class="judul-detail-produk">Ukuran</div>
+                    <div class="nilai-detail-produk">Regular</div>
+                  </div>
+                  <div class="baris-detail-produk">
+                    <div class="judul-detail-produk">Topping</div>
+                    <div class="nilai-detail-produk">Cheese Foam / Cheese</div>
+                  </div>
+                  <div class="baris-detail-produk">
+                    <div class="judul-detail-produk">Sajian</div>
+                    <div class="nilai-detail-produk">Cold / Ice</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="konten-ulasan" role="tabpanel">
+                <div class="blok-ulasan">
+                  <p class="mb-2"><strong>Reviews</strong></p>
+                  <p class="mb-4">There are no reviews yet.</p>
+
+                  <div
+                    class="border p-4"
+                    style="border-color: #a91f23 !important"
+                  >
+                    <h5 style="color: var(--warna-merah-brand); font-weight: 900">
+                      Be the first to review “Cheese Chocolate”
+                    </h5>
+
+                    <!-- PESAN RESPON -->
+                    <div
+                      id="pesanResponUlasan"
+                      class="pesan-respon-ulasan"
+                      role="alert"
+                    ></div>
+
+                    <form id="formUlasanProduk" novalidate>
+                      <!-- RATING -->
+                      <div class="mb-3">
+                        <label class="label-form-ulasan">Your rating *</label>
+
+                        <div class="baris-rating-bintang">
+                          <input
+                            class="input-rating-tersembunyi"
+                            type="radio"
+                            name="ratingBintang"
+                            id="rating5"
+                            value="5"
+                            required
+                          />
+                          <label class="label-bintang" for="rating5">★</label>
+
+                          <input
+                            class="input-rating-tersembunyi"
+                            type="radio"
+                            name="ratingBintang"
+                            id="rating4"
+                            value="4"
+                          />
+                          <label class="label-bintang" for="rating4">★</label>
+
+                          <input
+                            class="input-rating-tersembunyi"
+                            type="radio"
+                            name="ratingBintang"
+                            id="rating3"
+                            value="3"
+                          />
+                          <label class="label-bintang" for="rating3">★</label>
+
+                          <input
+                            class="input-rating-tersembunyi"
+                            type="radio"
+                            name="ratingBintang"
+                            id="rating2"
+                            value="2"
+                          />
+                          <label class="label-bintang" for="rating2">★</label>
+
+                          <input
+                            class="input-rating-tersembunyi"
+                            type="radio"
+                            name="ratingBintang"
+                            id="rating1"
+                            value="1"
+                          />
+                          <label class="label-bintang" for="rating1">★</label>
+                        </div>
+
+                        <small id="errorRating" class="teks-error-ulasan"
+                          >Please choose a rating.</small
+                        >
+                      </div>
+
+                      <!-- REVIEW -->
+                      <div class="mb-3">
+                        <label class="label-form-ulasan" for="inputUlasanTeks"
+                          >Your review *</label
+                        >
+                        <textarea
+                          id="inputUlasanTeks"
+                          class="input-form-ulasan"
+                          rows="5"
+                          required
+                        ></textarea>
+                        <small id="errorUlasan" class="teks-error-ulasan"
+                          >Please write your review.</small
+                        >
+                      </div>
+
+                      <div class="row g-3">
+                        <div class="col-md-6">
+                          <label
+                            class="label-form-ulasan"
+                            for="inputNamaPengulas"
+                            >Name *</label
+                          >
+                          <input
+                            id="inputNamaPengulas"
+                            class="input-form-ulasan"
+                            type="text"
+                            required
+                          />
+                          <small id="errorNama" class="teks-error-ulasan"
+                            >Please enter your name.</small
+                          >
+                        </div>
+                        <div class="col-md-6">
+                          <label
+                            class="label-form-ulasan"
+                            for="inputEmailPengulas"
+                            >Email *</label
+                          >
+                          <input
+                            id="inputEmailPengulas"
+                            class="input-form-ulasan"
+                            type="email"
+                            required
+                          />
+                          <small id="errorEmail" class="teks-error-ulasan"
+                            >Please enter a valid email.</small
+                          >
+                        </div>
+                      </div>
+
+                      <div class="mt-3 d-flex gap-2 flex-wrap">
+                        <button type="reset" class="tombol-reset-ulasan">
+                          Reset
+                        </button>
+                        <button type="submit" class="tombol-submit-ulasan">
+                          Submit
+                          <span
+                            id="spinnerKirimUlasan"
+                            class="spinner-border spinner-border-sm d-none"
+                            aria-hidden="true"
+                          ></span>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RELATED PRODUCTS -->
+          <h4 class="judul-related-produk mt-5">RELATED PRODUCTS</h4>
+          <div class="row g-4 mt-2">
+            <!-- Original -->
+            <div class="col-md-4">
+              <div class="kartu-produk">
+                <div class="bingkai-gambar-produk">
+                  <a
+                    href="produk-original.html"
+                    aria-label="Buka detail Original Chocolate"
+                  >
+                    <img
+                      src="images/Gemini_Generated_Image_9ftlek9ftlek9ftl.png"
+                      alt="Original Chocolate"
+                      loading="lazy"
+                    />
+                  </a>
+                  <div class="lapisan-quick-view">
+                    <button
+                      type="button"
+                      class="tombol-quick-view"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalQuickViewProduk"
+                      data-id-produk="original"
+                    >
+                      Quick View
+                    </button>
+                  </div>
+                </div>
+                <div class="nama-produk-kartu">Original Chocolate</div>
+                <div class="harga-produk-kartu">IDR 12,000</div>
+              </div>
+            </div>
+
+            <!-- Oreo -->
+            <div class="col-md-4">
+              <div class="kartu-produk">
+                <div class="bingkai-gambar-produk">
+                  <a href="produk-oreo.html" aria-label="Buka detail Oreo Chocolate">
+                    <img
+                      src="images/Gemini_Generated_Image_3cjk7f3cjk7f3cjk.png"
+                      alt="Oreo Chocolate"
+                      loading="lazy"
+                    />
+                  </a>
+                  <div class="lapisan-quick-view">
+                    <button
+                      type="button"
+                      class="tombol-quick-view"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalQuickViewProduk"
+                      data-id-produk="oreo"
+                    >
+                      Quick View
+                    </button>
+                  </div>
+                </div>
+                <div class="nama-produk-kartu">Oreo Chocolate</div>
+                <div class="harga-produk-kartu">IDR 15,000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- MODAL QUICK VIEW -->
+    <div class="modal fade" id="modalQuickViewProduk" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content" style="border-radius: 14px; overflow: hidden">
+          <div class="modal-header" style="border: 0">
+            <h5 class="modal-title" id="judulModalQuickView" style="font-weight: 900">
+              Detail Produk
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body pt-0">
+            <div class="row g-4 align-items-start">
+              <div class="col-md-5">
+                <img
+                  id="gambarModalQuickView"
+                  src=""
+                  alt=""
+                  style="
+                    width: 100%;
+                    border-radius: 12px;
+                    border: 1px solid #eee;
+                    height: 320px;
+                    object-fit: cover;
+                  "
+                />
+                <div class="mt-3">
+                  <a
+                    id="tautanKeHalamanProduk"
+                    href="#"
+                    class="tombol-utama"
+                    style="width: 100%; justify-content: center"
+                  >
+                    View Full Product
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-md-7">
+                <div id="isiModalQuickView" style="color: #333; line-height: 1.7"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS dipisah per-fungsi (module) -->
+    <script src="assets/js/data/produk-signature.js" defer></script>
+    <script src="assets/js/features/thumbnail-switcher.js" defer></script>
+    <script src="assets/js/features/quick-view-modal.js" defer></script>
+    <script src="assets/js/features/review-form.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
