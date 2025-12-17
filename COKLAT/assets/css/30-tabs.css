@@ -1,0 +1,24 @@
+.nav-tabs .nav-link {
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  font-size: .78rem;
+  font-weight: 800;
+  color: #777;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 12px 12px;
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--warna-merah-brand);
+  background: transparent;
+  border-bottom: 2px solid var(--warna-merah-brand);
+}
+
+.kotak-tab {
+  background: #fff;
+  border: 1px solid var(--warna-garis);
+  border-top: 0;
+  border-radius: 0 0 14px 14px;
+  padding: 18px;
+}

@@ -1,0 +1,195 @@
+/* CONTACT - KARTU & LAYOUT DASAR */
+
+.kartu-form-kontak {
+    background: #fff;
+    border: 1px solid var(--warna-garis);
+    border-radius: 10px;
+    box-shadow: var(--bayangan-lembut);
+    overflow: hidden;
+}
+
+.kolom-kiri-kontak,
+.kolom-kanan-kontak {
+    padding: 34px 34px 30px;
+}
+
+.kolom-kiri-kontak {
+    border-right: 1px solid var(--warna-garis);
+}
+
+/* CONTACT - TEKS (JUDUL & DESKRIPSI) */
+
+.judul-kontak {
+    color: var(--warna-merah-brand);
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.deskripsi-kontak {
+    color: #666;
+}
+
+/* CONTACT - BLOK INFO KIRI (HEAD OFFICE, FACTORY, EMAIL, PHONE)
+   Target: ikon di atas + grid 2x2 + rata tengah */
+
+.kartu-form-kontak .daftar-info-kontak {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 70px 110px;
+    /* jarak: atas-bawah | kiri-kanan */
+    margin-top: 42px;
+}
+
+/* dari layout "baris" jadi "kolom" (ikon di atas) */
+.kartu-form-kontak .baris-info-kontak {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* pembungkus teks setelah ikon ikut center */
+.kartu-form-kontak .baris-info-kontak>div {
+    text-align: center;
+}
+
+.kartu-form-kontak .ikon-info-kontak {
+    margin: 0 0 18px;
+}
+
+.kartu-form-kontak .ikon-info-kontak i {
+    font-size: 64px;
+    line-height: 1;
+    color: #6f8e97;
+}
+
+.kartu-form-kontak .label-info-kontak {
+    margin: 0 0 14px;
+    color: var(--warna-merah-brand);
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    font-size: 18px;
+}
+
+.kartu-form-kontak .nilai-info-kontak {
+    max-width: 260px;
+    margin: 0 auto;
+    color: #111;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.kartu-form-kontak .tautan-kontak {
+    color: #111;
+    text-decoration: none;
+}
+
+.kartu-form-kontak .tautan-kontak:hover {
+    text-decoration: underline;
+}
+
+/* CONTACT - FORM KANAN (LABEL, INPUT, PESAN, ERROR) */
+
+.label-form {
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.input-form {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 12px;
+    background: #fff;
+}
+
+.input-form:focus {
+    border-color: var(--warna-merah-brand);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(169, 31, 35, 0.12);
+}
+
+.teks-error {
+    color: #8a5a00;
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+/* pesan respon form */
+.pesan-form {
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+    font-weight: 600;
+    background: #fff;
+}
+
+.pesan-sukses {
+    border: 2px solid #2ecc71;
+    color: #2d6a4f;
+}
+
+.pesan-gagal {
+    border: 2px solid #f1a208;
+    background: rgba(241, 162, 8, 0.1);
+    color: #8a5a00;
+}
+
+/* CONTACT - TOMBOL FORM (RESET & SUBMIT) */
+
+.baris-tombol-form {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.tombol-reset {
+    background: transparent;
+    border: 1px solid #bbb;
+    padding: 10px 18px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.tombol-kirim {
+    background: var(--warna-merah-brand);
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tombol-kirim:hover {
+    background: #8f171b;
+}
+
+/* RESPONSIVE */
+/* tablet ke bawah: border kolom kiri jadi bawah */
+@media (max-width: 992px) {
+    .kolom-kiri-kontak {
+        border-right: 0;
+        border-bottom: 1px solid var(--warna-garis);
+    }
+}
+
+/* hp kecil: grid info 2x2 jadi 1 kolom */
+@media (max-width: 600px) {
+    .kartu-form-kontak .daftar-info-kontak {
+        grid-template-columns: 1fr;
+        gap: 42px;
+    }
+}

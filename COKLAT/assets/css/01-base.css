@@ -1,0 +1,14 @@
+body {
+  background: var(--warna-latar);
+  color: var(--warna-teks);
+  font-family: "Lato", sans-serif;
+  line-height: 1.8;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", serif;
+  color: var(--warna-judul);
+}

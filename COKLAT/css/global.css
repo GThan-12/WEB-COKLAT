@@ -1,0 +1,236 @@
+:root {
+    --warna-latar: #fdfcf8;
+    --warna-latar-sekunder: #faf9f6;
+    --warna-teks: #4a4a4a;
+    --warna-judul: #3e2b26;
+    --warna-garis: #e5e5e5;
+    --warna-merah-brand: #a91f23;
+    --warna-aksen: #a57865;
+
+    --radius-kartu: 18px;
+    --bayangan-lembut: 0 12px 28px rgba(0, 0, 0, 0.07);
+
+    --tinggi-topbar: 36px;
+    --tinggi-header: 92px;
+    --tinggi-total-header: calc(var(--tinggi-topbar) + var(--tinggi-header));
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--warna-latar);
+    color: var(--warna-teks);
+    font-family: "Lato", sans-serif;
+    line-height: 1.8;
+    padding-top: var(--tinggi-total-header);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Playfair Display", serif;
+    color: var(--warna-judul);
+}
+
+.bagian {
+    padding: 96px 0;
+}
+
+.bagian-latar {
+    background: var(--warna-latar-sekunder);
+}
+
+.judul-bagian {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.judul-bagian h2 {
+    font-size: 2.35rem;
+    margin-bottom: 12px;
+}
+
+.garis-judul {
+    width: 64px;
+    height: 2px;
+    background: var(--warna-judul);
+    margin: 0 auto;
+    opacity: .85;
+}
+
+/* Topbar */
+.bilah-atas {
+    height: var(--tinggi-topbar);
+    background: var(--warna-merah-brand);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1031;
+}
+
+.teks-promo {
+    font-size: .82rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ikon-sosial a {
+    color: #fff;
+    opacity: .9;
+    margin-left: 12px;
+    text-decoration: none;
+}
+
+.ikon-sosial a:hover {
+    opacity: 1;
+}
+
+/* Header */
+.bungkus-header {
+    position: fixed;
+    top: var(--tinggi-topbar);
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    background: rgba(253, 252, 248, .92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--warna-garis);
+    transition: .25s;
+}
+
+.navigasi {
+    padding: 18px 0;
+    transition: .25s;
+}
+
+.judul-brand {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 1.35rem;
+    text-decoration: none;
+    color: var(--warna-judul);
+}
+
+.tautan-nav {
+    color: var(--warna-judul) !important;
+    font-size: .85rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    margin-left: 18px;
+}
+
+.header-menyusut .navigasi {
+    padding: 10px 0;
+}
+
+.header-menyusut .judul-brand {
+    font-size: 1.2rem;
+}
+
+/* Hero ringkas */
+.hero-utama {
+    min-height: calc(100vh - var(--tinggi-total-header));
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.hero-utama h1 {
+    font-size: 3.4rem;
+    line-height: 1.15;
+}
+
+.hero-utama p {
+    color: #666;
+    max-width: 520px;
+}
+
+.gambar-hero {
+    width: 100%;
+    height: 520px;
+    display: flex;
+    object-fit: cover;
+    border-radius: 0 56px 0 56px;
+    box-shadow: var(--bayangan-lembut);
+    border: 1px solid rgba(0, 0, 0, .04);
+}
+
+.tombol-utama {
+    border: 1px solid var(--warna-judul);
+    color: var(--warna-judul);
+    padding: 12px 34px;
+    background: transparent;
+    text-transform: uppercase;
+    letter-spacing: .22em;
+    font-size: .78rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tombol-utama:hover {
+    background: var(--warna-judul);
+    color: #fff;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: var(--warna-merah-brand);
+    transition: width .3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .hero-utama {
+        text-align: center;
+    }
+
+    .hero-utama p {
+        margin: 0 auto;
+    }
+
+    .gambar-hero {
+        height: 320px;
+        margin-top: 24px;
+        border-radius: 0 40px 0 40px;
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --tinggi-header: 82px;
+    }
+
+    .ikon-sosial {
+        display: none;
+    }
+
+    .hero-utama h1 {
+        font-size: 2.55rem;
+    }
+}
